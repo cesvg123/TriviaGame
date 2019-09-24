@@ -8,11 +8,104 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <script src="assets/javascript/game.js"></script>
+    <script src="assets/javascript/app.js"></script>
+    <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/style.css">
+
 </head>
 
 <body>
+    <div id='initialPage'>
+    <h1>Totally Trivial!!!</h1>
 
+    <button class="thebuttons" id="start-button">Start</button>
+    </div>
 
+    <div id='questions'>
+        <div class='counting-down' id='time-remaining'>Time Remaining: <span class='counting-down' id='timer'></span>
+            seconds</div>
+        <div id="question1">
+            <h2>What was the first full lenght CGI movie?</h2>
+            <div>
+                <input type="radio" class="ans" value="wrong" name="q1"> Bug's Life
+                <input type="radio" class="ans" value="wrong" name="q1"> Monsters Inc.
+                <input type="radio" class="ans" value="right" name="q1"> Toy Story
+                <input type="radio" class="ans" value="wrong" name="q1"> The Lion King
+            </div>
+        </div>
+        <div id="question2">
+            <h2> Which of those is NOT a name of one of the Spice Girld?</h2>
+            <div>
+                <input type="radio" class="ans" value="wrong" name="q2"> Sporty Spice
+                <input type="radio" class="ans" value="right" name="q2"> Fred Spice
+                <input type="radio" class="ans" value="wrong" name="q2"> Scary Spice
+                <input type="radio" class="ans" value="wrong" name="q2"> Posh Spice
+            </div>
+        </div>
+        <div id="question3">
+            <h2> Which NBA team won the most title in the 90s?</h2>
+            <div>
+                <input type="radio" class="ans" value="wrong" name="q3"> New York Knicks
+                <input type="radio" class="ans" value="wrong" name="q3"> Portland TrailBlazers
+                <input type="radio" class="ans" value="wrong" name="q3"> Los Angeles Lakers
+                <input type="radio" class="ans" value="right" name="q3"> Chicago Bulls
+            </div>
+        </div>
+        <div id="question4">
+            <h2>Which group release the hit song, "Smells Like Teen Spirit"?</h2>
+            <div>
+                <input type="radio" class="ans" value="right" name="q4"> Nirvana
+                <input type="radio" class="ans" value="wrong" name="q4"> Backstreet Boys
+                <input type="radio" class="ans" value="wrong" name="q4"> The Offspring
+                <input type="radio" class="ans" value="wrong" name="q4"> No Doubt
+            </div>
+        </div>
+        <div id="question5">
+            <h2>Whcih popular Disney movie featured the song, "Circle of Lide"?</h2>
+            <div>
+                <input type="radio" class="ans" value="wrong" name="q5"> Aladdin
+                <input type="radio" class="ans" value="wrong" name="q5"> Hercules
+                <input type="radio" class="ans" value="wrong" name="q5"> Mulan
+                <input type="radio" class="ans" value="right" name="q5"> The Lion King
+            </div>
+        </div>
+        <div id="question6">
+            <h2>Finish the line from the Fresh Prince of Bel-Air theme song: "I whistled for a cab and when it come
+                near, the license plate said ..."</h2>
+            <div>
+                <input type="radio" class="ans" value="wrong" name="q6"> Dice
+                <input type="radio" class="ans" value="wrong" name="q6"> Mirror
+                <input type="radio" class="ans" value="right" name="q6"> Fresh
+                <input type="radio" class="ans" value="wrong" name="q6"> Cab
+            </div>
+        </div>
+        <div id="question7">
+            <h2>What was Doug's Best Friend name?</h2>
+            <div>
+                <input type="radio" class="ans" value="right" name="q7"> Skeeter
+                <input type="radio" class="ans" value="wrong" name="q7"> Mark
+                <input type="radio" class="ans" value="wrong" name="q7"> Zach
+                <input type="radio" class="ans" value="wrong" name="q7"> Coby
+            </div>
+        </div>
+        <div id="question8">
+            <h2>What was the name of the principal at Abyside High in Saved by the Bell?</h2>
+            <div>
+                <input type="radio" class="ans" value="wrong" name="q8"> Mr Zhou
+                <input type="radio" class="ans" value="wrong" name="q8"> Mr Defggers
+                <input type="radio" class="ans" value="right" name="q8"> Mr Belding
+                <input type="radio" class="ans" value="wrong" name="q8"> Page
+            </div>
+        </div>
+        <button class="thebuttons" id="done-button">Done</button>
+    </div>
+
+    <div id="results">
+        <h3>Done!</h3>
+        <p>Correct Answers: <span id="right"></span></p>
+        <p>Incorrect Answers: <span id="wrong"></span></p>
+        <p>Unanswered: <span id="unanswered"></span></p>
+    </div>
 </body>
+
+</html>
